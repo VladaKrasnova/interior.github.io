@@ -1,0 +1,192 @@
+@keyframes pulsate-bck{0%{transform:scale(1)}50%{transform:scale(.98)}100%{transform:scale(1)}}
+
+.top-cart{
+    background-image: url(img/bg3.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.heading-cart{
+    margin-top: 127px;
+}
+
+.cart{
+    margin: 64px 0;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 32px;
+    &__content{
+        grid-column: span 8;
+    }
+    &__name-box{
+        @include flex();
+        padding-bottom: 14px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        margin-right: 24px;
+    }
+    &__item{
+        border-top: 0.5px solid #CACDD8; 
+        padding: 26px 0 32px 0;
+        @include flex();
+        align-items: flex-start;
+    }
+    &__left{
+        display: flex;
+        gap: 32px;
+    }
+    &__img{
+        width: 173px;
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        width: 276px;
+    }
+    &__heading{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+    }
+    &__text{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #888888;
+    }
+    &__price{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #050505;
+    }
+    &__link-box{
+        display: flex;
+        gap: 30px;
+    }
+    &__link{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 210%;
+        text-decoration-line: underline;
+        color: #000000;
+    }
+    &__link:hover{
+        text-decoration-line: none;
+    }
+    &__input{
+        all: unset;
+        height: 51px;
+        width: 71px;
+        border: 1px solid #F7F6F6;
+        border-radius: 6px;
+        background-color: #F7F6F6;
+        color: #000;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    &__button-box{
+        margin-top: 30px;
+        display: flex;
+        gap: 7px;
+    }
+    &__button{
+        all: unset;
+        width: 200px;
+        height: 37px;
+        border: 1px solid #000000;
+        border-radius: 50px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #000000;
+        transition: all 0.5s;
+    }
+
+    &__button:hover{
+        background-color: #000;
+        color: #fff;
+    }
+
+    &__form{
+        background: #F7F6F6;
+        border-radius: 20px;
+        height: 562px;
+        grid-column: span 4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 42px;
+    }
+    &__form-heading{
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        color: #000000;
+    }
+    &__forms{
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+        width: 288px;
+        gap: 41px;        
+    }
+    &__form-input{
+        all: unset;
+        border-bottom: 1px solid #CACDD8;
+        padding-bottom: 4px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        transition: all 0.5s;
+    }
+    &__form-input::placeholder{
+        color: #000000;
+    }
+    &__form-price{
+        margin: 64px 0 18px 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+    }
+    &__form-button{
+        all: unset;
+        width: 290px;
+        height: 41px;
+        border: 1px solid #040404;
+        border-radius: 20px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #000000;
+        transition: all 0.5s;
+    }
+    &__form-button:hover{
+        background-color: #000;
+        color: #fff;
+        animation: pulsate-bck 1s ease-in infinite both;
+    }
+}
